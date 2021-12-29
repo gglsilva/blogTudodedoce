@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h1>Blog Tudo de Doces</h1>
+    {% for post in posts %}
+        <h2>
+            <a href="#">
+                {{ post.title }}
+            </a>
+        </h2>
+        <p>
+            Publicado: {{ post.publish }} by {{ post.author }}
+        </p>
+    {% endfor %}
+
+{% endblock %}
