@@ -4,7 +4,7 @@
     <h1>Blog Tudo de Doces</h1>
     {% for post in posts %}
         <h2>
-            <a href="#">
+            <a href="{{ post.get_absolute_url }}">
                 {{ post.title }}
             </a>
         </h2>
