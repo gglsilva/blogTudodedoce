@@ -10,4 +10,7 @@
     <p>
         {{ post.content|linebreaks }}
     </p>
+    <p>
+        <a href="{% url "blog:post_share" post.id %}">Compartilhar este post</a>
+    </p>
 {% endblock %}
